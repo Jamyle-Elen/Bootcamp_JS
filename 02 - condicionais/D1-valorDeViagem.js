@@ -12,8 +12,8 @@
 const valorEtanol = 3.64;
 const valorGasolina = 5.59;
 const tipoCombustivel = "Premium";
-const distanciaKM = 30;
-const gastoMedioEtanol = (valorEtanol)*KM;
-const gastoMedioGasolina = (valorGasolina)*KM;
+const distanciaKM = 5;
+const gastoMedioEtanol = ((distanciaKM%100)*valorEtanol);
+const gastoMedioGasolina = ((distanciaKM%100)*valorGasolina);
 
-
+// console.log(`O gasto para realizar essa viagem de ${distanciaKM}KM foi de R$ ${gastoMedioGasolina} ulitizando o combustivel ${tipoCombustivel}, por ser um carro flex, você gastaria apenas R$ ${gastoMedioEtanol} se optado por Etanol.`)
