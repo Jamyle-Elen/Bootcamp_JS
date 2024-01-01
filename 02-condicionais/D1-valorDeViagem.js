@@ -9,11 +9,17 @@
 
 // Imprima no console o valor que será gasto para realizar esta viagem.
 
-const valorGasolina = 5.59;
+const valorGasolina = 6.66;
+const valorEtanol = 5.79;
 const distanciaKM = 100;
-const kmPorLitros = 15;
+const kmPorLitros = 10;
+const tipoCombustivel = `Etanol`;
+const gastoMedio = distanciaKM / kmPorLitros;
 
-const gastoMedioEtanol = distanciaKM / kmPorLitros;
-const valorGasto = gastoMedioEtanol * valorGasolina;
-console.log(valorGasto.toFixed(2))
-
+if (tipoCombustivel === `Etanol`) {
+  const valorGasto = gastoMedio * valorGasolina;
+  console.log(valorGasto.toFixed(2));
+} else {
+  const valorGasto = gastoMedio * valorEtanol;
+  console.log(valorGasto.toFixed(2));
+}
