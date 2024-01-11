@@ -8,3 +8,6 @@
     - Em duas vezes, preço normal de etiqueta sem juros;
     - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
+
+const produto = 40;
+const produtoAVista = produto
