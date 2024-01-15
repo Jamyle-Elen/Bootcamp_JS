@@ -4,10 +4,28 @@
 
     Código Condição de pagamento.:
     - À vista Débito, recebe 10% de desconto;
-    - À vista no Dinheiro ou PIX, recene 15% de desconto;
+    - À vista no Dinheiro ou PIX, recebe 15% de desconto;
     - Em duas vezes, preço normal de etiqueta sem juros;
     - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
-const produto = 40;
-const produtoAVista = produto
+const valorRealProduto = 50;
+const formaDePagamento = 1;
+const descontoDebito = valorRealProduto * 0.10; // Forma de pagamento 1
+const descontoDinheiroPIX = valorRealProduto * 0.15; // Forma de pagamento 2
+const acimaDuasVezes = valorRealProduto * 0.10; // Forma de pagamento 4
+
+if (formaDePagamento === 1) {
+    console.log('Selecionado.: À Vista Débito')
+    console.log(valorRealProduto - descontoDebito)
+} else if (formaDePagamento === 2) {
+    console.log('Selecionado.: À Vista Dinheiro ou PIX')
+    console.log(valorRealProduto - descontoDinheiroPIX)
+} else if (formaDePagamento === 3) {
+    console.log('Selecionado.: Duas vezes')
+    console.log(valorRealProduto
+} else {
+    console.log('ERROR.:' Dii[
+
+    ])
+}
