@@ -9,23 +9,25 @@
     - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
-const valorRealProduto = 50;
-const formaDePagamento = 1;
-const descontoDebito = valorRealProduto * 0.10; // Forma de pagamento 1
+const valorRealProduto = 20;
+const formaDePagamento = 2;
+const quantidadeParcelas = 4;
+const descontoDebito = valorRealProduto * 0.1; // Forma de pagamento 1
 const descontoDinheiroPIX = valorRealProduto * 0.15; // Forma de pagamento 2
-const acimaDuasVezes = valorRealProduto * 0.10; // Forma de pagamento 4
+const acimaDuasVezes = valorRealProduto * 0.1 * quantidadeParcelas; // Forma de pagamento 4
 
 if (formaDePagamento === 1) {
-    console.log('Selecionado.: À Vista Débito')
-    console.log(valorRealProduto - descontoDebito)
+  console.log("Selecionado.: À Vista Débito");
+  console.log(valorRealProduto - descontoDebito);
 } else if (formaDePagamento === 2) {
-    console.log('Selecionado.: À Vista Dinheiro ou PIX')
-    console.log(valorRealProduto - descontoDinheiroPIX)
+  console.log("Selecionado.: À Vista Dinheiro ou PIX");
+  console.log(valorRealProduto - descontoDinheiroPIX);
 } else if (formaDePagamento === 3) {
-    console.log('Selecionado.: Duas vezes')
-    console.log(valorRealProduto
+  console.log("Selecionado.: Duas vezes");
+  console.log(valorRealProduto);
+} else if (formaDePagamento === 4) {
+  console.log("Selecionado.: +2x");
+  console.log(valorRealProduto + acimaDuasVezes);
 } else {
-    console.log('ERROR.:' Dii[
-
-    ])
+  console.log("Forma de pagamento inválida!");
 }
