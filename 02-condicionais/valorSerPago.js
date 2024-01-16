@@ -9,8 +9,8 @@
     - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
-const valorRealProduto = 20;
-const formaDePagamento = 2;
+const valorRealProduto = 100;
+const formaDePagamento = 4;
 const quantidadeParcelas = 4;
 const descontoDebito = valorRealProduto * 0.1; // Forma de pagamento 1
 const descontoDinheiroPIX = valorRealProduto * 0.15; // Forma de pagamento 2
