@@ -1,8 +1,11 @@
-function incrementarJuros(valor, percentualJuros) {
-    const valorDeAcrescimo = (percentualJuros / 100) * valor;
-    return (percentualJuros / 100)
+
+function calcularJuros() {
+
 }
 
-console.log(incrementarJuros(100,10));
-console.log(incrementarJuros(100,15));
-console.log(incrementarJuros(100,20));
+function main() {
+    console.log('Programa principal');
+    calcularJuros();
+}
+
+main();
