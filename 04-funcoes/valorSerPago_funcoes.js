@@ -25,3 +25,6 @@ if (formaDePagamento === 1) {
 } else {
   console.log("Forma de pagamento inválida!");
 }
+
+console.log(100 * 0.10);
+console.log(10 / 100);
