@@ -6,8 +6,6 @@ const jamyle = {
     }
 };
 
-jamyle.descrever = function() {
-    console.log(`Meu nome é ${this.nome}`);
-}
+const atributo = 'nome';
 
-jamyle.descrever();
+console.log(jamyle[atributo]);
