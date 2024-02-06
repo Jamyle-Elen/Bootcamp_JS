@@ -8,4 +8,5 @@ const jamyle = {
 
 const atributo = 'nome';
 
-console.log(jamyle[atributo]);
+jamyle['nome'] = 'teste';
+jamyle.nome = 'teste';
