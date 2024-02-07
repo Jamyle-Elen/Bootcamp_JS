@@ -1,12 +1,19 @@
-const jamyle = {
-    nome: "Jamyle Elen C do Nascimento",
-    idade: 18,
-    descrever: function() {
-        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
+class Pessoa {
+    nome;
+    idade;
+
+    descrever() {
+        console.log(`Minha idade é ${this.nome} e minha idade é ${this.idade}`);
     }
-};
+}
 
-const atributo = 'nome';
+const jamyle = new Pessoa();
+jamyle.nome = 'Jamyle Elen C do Nascimento';
+jamyle.idade = 18;
 
-jamyle['nome'] = 'teste';
-jamyle.nome = 'teste';
+const rhuan = new Pessoa();
+rhuan.nome = 'Rhuan Pablo M da Silva';
+rhuan.idade = 18;
+
+jamyle.descrever();
+rhuan.descrever();
