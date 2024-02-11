@@ -14,7 +14,13 @@ class Carro {
         this.cor = cor;
         this.gastoMedioKM = gastoMedioKM;
     }
+
+    calcularGastoViagem(distancia, precoCombustivel) {
+        return distancia * this.gastoMedioKM * precoCombustivel;
+    }
 }
 
 const accord = new Carro('Honda', 'Branco', 1/8);
-console.log(accord);
+console.log(accord.calcularGastoViagem(2090, 5,890))
+const onix = new Carro('Chevrolet', 'Azul', 1/9);
+console.log(onix.calcularGastoViagem(26, 5,890).toFixed(2));
