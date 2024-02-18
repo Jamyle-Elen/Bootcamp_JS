@@ -4,7 +4,7 @@ function gets() {
 }
 
 function print(texto) {
-    console.log(testo)
+    console.log(texto);
 }
 
 module.exports = {gets, print};
