@@ -16,5 +16,4 @@ for (let i = 0; i < notas.length; i++) {
 }
 
 const media = soma / notas.length;
-
 console.log(media.toFixed(1));
