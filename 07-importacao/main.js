@@ -14,22 +14,15 @@ const { gets, print } = require("./funcoes-auxiliares");
      Saída:
      98
 */
+const quantidadeDeAlunos = gets();
+let maiorValorEncontrado = 0;
 
-const numerosSorteados = [];
-
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < quantidadeDeAlunos; i++) {
   const numerosSorteado = gets();
-  numerosSorteados.push(numerosSorteado);
-}
-
-let maiorValor = 0;
-
-for (let i = 0; i < numerosSorteados.length; i++) {
-  const numeroSorteado = numerosSorteados[i];
-  if (numeroSorteado > maiorValor) {
-    maiorValor = numeroSorteado;
+  if (numerosSorteado > maiorValorEncontrado) {
+    maiorValorEncontrado = numerosSorteado;
   }
 }
 
-print(`Números sorteados: ${numerosSorteados}`);
-print(`Maior número: ${maiorValor}`);
+
+print(`Maior número: ${maiorValorEncontrado}`);
